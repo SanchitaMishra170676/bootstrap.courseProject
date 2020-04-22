@@ -36,8 +36,8 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
 
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                <span class="navbar-text" id="btn2">
+                    <!-- <a data-toggle="modal" data-target="#loginModal"> -->
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
              </div>
@@ -170,7 +170,8 @@
                    <!-- TOOL TIP <a role="button" class="btn btn-warning" data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
                         data-placement="bottom"  href="#reserve">Reserve Table</a> -->
 
-                      <a role="button" class="btn btn-warning"  data-toggle="modal" data-target="#reserve" href="#reserve">Reserve Table</a>
+                      <!-- <a role="button" class="btn btn-warning"  data-toggle="modal" data-target="#reserve" href="#reserve">Reserve Table</a> -->
+                        <a role="button" class="btn btn-warning" id="btn1" href="#reserve">Reserve Table</a>
                </div>
             </div>
         </div>
@@ -440,6 +441,19 @@
               $("#carouselButton").children("span").addClass('fa-pause');
           }
       });
+
+      $("#btn1").click(function(){
+        $('#reserve').modal('toggle')
+
+      });
+
+
+
+      $("#btn2").click(function(){
+        $('#loginModal').modal('toggle')
+
+      });
+
  </script>
 
 
